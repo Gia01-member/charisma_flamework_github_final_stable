@@ -1,0 +1,11 @@
+
+<h1>診断結果：{{ ctype }}</h1>
+<form action="/pdf" method="post">
+<input type="hidden" name="ctype" value="{{ ctype }}"/>
+<input type="hidden" name="comment" value="{{ comment }}"/>
+<input type="hidden" name="A" value="0"/>
+<input type="hidden" name="B" value="0"/>
+<input type="hidden" name="C" value="0"/>
+<input type="hidden" name="D" value="0"/>
+<button type="submit">PDFをダウンロード</button>
+</form>
